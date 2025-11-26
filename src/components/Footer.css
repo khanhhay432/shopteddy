@@ -1,0 +1,152 @@
+.footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff6b9d;
+}
+
+.footer-logo .logo-icon {
+  font-size: 2rem;
+}
+
+.footer-description {
+  color: #bdc3c7;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon.facebook {
+  background: #3b5998;
+}
+
+.social-icon.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-icon.tiktok {
+  background: #000000;
+}
+
+.social-icon.youtube {
+  background: #ff0000;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 107, 157, 0.3);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-section ul li a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6b9d;
+  transform: translateX(5px);
+}
+
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #bdc3c7;
+  margin-bottom: 1rem;
+}
+
+.contact-info li svg {
+  color: #ff6b9d;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  text-align: center;
+  color: #bdc3c7;
+}
+
+.footer-bottom p {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 968px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-container {
+    padding: 0 1rem;
+  }
+}
